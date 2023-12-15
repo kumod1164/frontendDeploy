@@ -12,11 +12,11 @@ const AllRoutes = () => {
 
     return (
         <Routes>
-                <Route path='/Profile' element= {<Profile/>}>Profile</Route>
-                <Route path='/' element= {<Register/>}>Register</Route>
-                <Route path='/Login' element= {<Login/>}>Login</Route>
-                <Route path='/Calculator' element= {<Calculator/>}>Calculator</Route>
-        </Routes>
+        <Route path='/Profile' element= {<Profile/>}>Profile</Route>
+        <Route path='/' element= {<Register/>}>Register</Route>
+        <Route path='/Login' element= {<Login/>}>Login</Route>
+        <Route path='/Calculator' element= {<Calculator/>}>Calculator</Route>
+</Routes>
     )
 }
 
