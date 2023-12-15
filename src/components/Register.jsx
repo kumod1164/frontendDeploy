@@ -22,9 +22,10 @@ const Login = () => {
     <div className='container'>
         <h2>Register</h2>
         <input type="text"  placeholder='name'/>
+        <input type="text"  placeholder='name' />
         <input type="text"  placeholder='email' onChange={(e)=>setEmail(e.target.value)}/>
         <input type="text" placeholder='password' onChange={(e)=>setPass(e.target.value)}/>
-        <button onClick={handleSignup}> Submit</button>
+        <button onClick={handleSignup}> Register</button>
     </div>
   )
 }
