@@ -20,8 +20,9 @@ const Login = () => {
   }
   return (
     <div className='container'>
-        <h2>Login</h2>
-        <input type="text"  placeholder='name' onChange={(e)=>setEmail(e.target.value)}/>
+        <h2>Register</h2>
+        <input type="text"  placeholder='name'/>
+        <input type="text"  placeholder='email' onChange={(e)=>setEmail(e.target.value)}/>
         <input type="text" placeholder='password' onChange={(e)=>setPass(e.target.value)}/>
         <button onClick={handleSignup}> Submit</button>
     </div>

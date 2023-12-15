@@ -16,12 +16,12 @@ function Navbar() {
       };
     
     return(
-      <div  style={navbarStyle}>
-      <Link to='/' style={linkStyle}>Register</Link>
-       <Link to='/login' style={linkStyle}>Login</Link>
-       <Link to='/Profile' style={linkStyle}>Profile</Link>
-       <Link to='/calculator'style={linkStyle}>Calculator</Link>
-   </div>
+        <div  style={navbarStyle}>
+           <Link to='/' style={linkStyle}>Register</Link>
+            <Link to='/login' style={linkStyle}>Login</Link>
+            <Link to='/Profile' style={linkStyle}>Profile</Link>
+            <Link to='/calculator'style={linkStyle}>Calculator</Link>
+        </div>
     )
 }
 
