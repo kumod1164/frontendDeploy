@@ -1,17 +1,21 @@
 
-
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import LoginAndSignup from '../components/LoginAndSignup/LoginAndSignup'
-import Dashboard from '../components/Dashboard/Dashboard'
-import { useSelector } from 'react-redux'
+import Login from '../components/Login'
+import Register from '../components/Register'
+import Profile from '../components/Profile'
+import Calculator from '../components/Calculator'
+
+
 
 const AllRoutes = () => {
-    const isAuth = useSelector((store) => store.authReducer.isAuth)
+
     return (
         <Routes>
-            <Route path='/' element={<LoginAndSignup />} />
-            <Route path='/dashboard' element={isAuth ? <Dashboard /> : <LoginAndSignup />} />
+                <Route path='/' element= {<Profile/>}>Profile</Route>
+                <Route path='/Register' element= {<Register/>}>Register</Route>
+                <Route path='/Login' element= {<Login/>}>Login</Route>
+                <Route path='/Calculator' element= {<Calculator/>}>Calculator</Route>
         </Routes>
     )
 }
